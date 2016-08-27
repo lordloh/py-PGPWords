@@ -15,7 +15,7 @@ def getPGPWords(givenString):
                 PGPWordsString=PGPWordsString+' '+pgpWords[int(hexNum,16)][i%2];
                 i=i+1;
             PGPWordsString=PGPWordsString.strip();
-        except:
+        except e:
             PGPWordsString=-2;
         return PGPWordsString;
     else:
